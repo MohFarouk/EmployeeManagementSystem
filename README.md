@@ -1,49 +1,51 @@
 # Employee Management System
 
-**Student name:** Mohamed Farouk  
-**Student ID:** `ADD_YOUR_STUDENT_ID`
+**Student Name:** Mohamed Mahmoud Farouk  
+**Student ID:** 2302009
 
 ## Description
-A small Java employee-management project demonstrating inheritance, polymorphism, encapsulation, an enum, and a department-to-employee association.
 
-### Included classes
-- `Employee` — abstract parent class with shared employee details and `calculateSalary()`.
-- `CommissionEmployee` — base salary plus commission on sales.
-- `MonthlyEmployee` — fixed monthly salary.
-- `HourlyEmployee` — hourly pay, with overtime above 40 hours paid at 1.5x.
-- `Department` — stores employees and calculates the total payroll.
-- `Gender` — enum used by employee objects.
-- `Main` — runs a demonstration with sample data.
-- `MainTest` — executable smoke tests using Java assertions.
+A Java employee management system demonstrating object-oriented programming concepts, including inheritance, polymorphism, encapsulation, an enum, and associations between departments and employees.
+
+## Classes
+
+- `Employee` — Abstract parent class containing shared employee details and the `calculateSalary()` method.
+- `CommissionEmployee` — Employee with a base salary and commission on sales.
+- `MonthlyEmployee` — Employee receiving a fixed monthly salary.
+- `HourlyEmployee` — Employee paid by the hour, with overtime above 40 hours paid at 1.5 times the regular hourly rate.
+- `Department` — Manages employees and calculates total payroll.
+- `Gender` — Enum representing employee gender.
+- `Main` — Demonstrates the system using sample data.
+- `MainTest` — Runs executable tests using Java assertions.
 
 ## Requirements
-- JDK 17 or later
-- Git (only needed to publish the project)
 
-## Run
-From the project root:
+- JDK 17 or later
+
+## How to Run
+
+Open a terminal in the project root directory and compile the source files:
 
 ```bash
 javac -d out src/model/*.java src/Main.java src/test/MainTest.java
+```
+
+Run the demonstration:
+
+```bash
 java -cp out Main
+```
+
+Run the tests:
+
+```bash
 java -ea -cp out MainTest
 ```
 
-## GitHub submission
-1. Replace `ADD_YOUR_STUDENT_ID` above with your actual student ID.
-2. Create a **public** GitHub repository.
-3. From this folder, run:
+## GitHub Repository
 
-```bash
-git init
-git add .
-git commit -m "Initial commit: Java diagram implementation"
-git branch -M main
-git remote add origin https://github.com/YOUR-USERNAME/YOUR-REPO-NAME.git
-git push -u origin main
-```
-
-4. Submit the repository URL through the Google Form provided by your instructor.
+[Employee Management System](https://github.com/MohFarouk/EmployeeManagementSystem)
 
 ## Note
-This implementation is based on the class names and project structure in the assignment message. The UML diagram itself was not included in the message received here, so compare the attributes, method signatures, visibility, and relationships against the original diagram before submitting.
+
+The implementation was prepared based on the class names and project structure provided in the assignment instructions. The original UML diagram should be checked to verify that all attributes, method signatures, access modifiers, and relationships match the required design.
